@@ -33,7 +33,7 @@ android_tools:
 android_sys_image: "\"system-images;android-27;google_apis;x86\""
 
 # libraries needed for avd(android virtual device) emulation
-# android_apt_libraries:
+android_apt_libraries:
     - libglu1
     - libpulse0
 
