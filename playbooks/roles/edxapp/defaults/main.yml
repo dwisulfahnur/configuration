@@ -347,7 +347,7 @@ EDXAPP_LANGUAGE_COOKIE: 'openedx-language-preference'
 EDXAPP_CERTIFICATE_TEMPLATE_LANGUAGES:
   'en': 'English'
   'es': 'Español'
-EDXAPP_TIME_ZONE: 'America/New_York'
+EDXAPP_TIME_ZONE: 'Europe/London'
 
 EDXAPP_HELP_TOKENS_BOOKS:
     learner: "http://edx.readthedocs.io/projects/open-edx-learner-guide"
