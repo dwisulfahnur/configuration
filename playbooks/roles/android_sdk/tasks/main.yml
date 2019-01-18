@@ -67,7 +67,7 @@
   register: android_packages
 # Use the android sdk manager to install the build tools necessary for the edx mobile app
 - name: Install other Android tools
-  shell: "echo 'y' | {{ android_home }}/tools/bin/sdkmanager {{ android_packages.function_output | join(' ') }} "
+  shell: "echo 'y' | {{ android_home }}/tools/bin/sdkmanager {{ android_packages.function_output | join(' ') }} > /dev/null"
   become: yes
   become_user: "{{ android_user }}"
 # Link adb to tools, where all the rest of the android tools are

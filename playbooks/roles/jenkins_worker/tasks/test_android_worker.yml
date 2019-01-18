@@ -9,7 +9,7 @@
 # Test that the necessary build targets for building the edx app have
 # been installed.
 - name: Verify correct Android build targets installed
-  shell: "{{ android_home }}/tools/android list target |tr '\n' ' '"
+  shell: "{{ android_home }}/tools/bin/sdkmanager --list |tr '\n' ' '"
   register: build_targets
 - with_items: "{{ android_build_targets }}"
   assert:
