@@ -157,3 +157,14 @@
     - inputs
     - outputs
   notify: restart splunkforwarder
+
+- name: Disable splunkforwarder listener
+  blockinfile:
+    name: "/opt/splunkforwarder/etc/system/local/server.conf"
+    owner: splunk
+    group: splunk
+    mode: "0644"
+    block: |
+      [httpServer]
+      disableDefaultPort = true
+  notify: restart splunkforwarder
