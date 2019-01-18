@@ -37,8 +37,7 @@
   assert:
     that:
       - "item.stat.exists == True"
-# TEMP: until we either change to using a different system image OR google hosts
-# the android 23 image again
+# Verify system image
 - name: Verify that cached Android sys image is installed
   shell: "stat {{ android_home }}/system-images/android-27"
   register: android_27_stat

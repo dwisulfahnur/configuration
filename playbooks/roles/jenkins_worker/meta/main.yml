@@ -12,8 +12,8 @@ dependencies:
   - role: android_sdk
     when: android_worker is defined
     # User/group to manage Android SDK
-    android_user: "jenkins"
-    android_group: "jenkins"
+    android_user: "android"
+    android_group: "android"
     # Tarball to download
     # old path "android-sdk_r24.4.1-linux.tgz" replaced 
     android_download: "sdk-tools-linux-4333796.zip"
