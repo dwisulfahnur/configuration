@@ -87,7 +87,7 @@
   with_items: "{{ android_apt_libraries }}"
 # Download Android System Image to run emulator 
 - name: Download Android System Image
-  shell: "echo 'y' | {{ android_home }}/tools/bin/sdkmanager  {{ android_sys_image }} " 
+  shell: "echo 'y' | {{ android_home }}/tools/bin/sdkmanager  {{ android_sys_image }} > /dev/null" 
   become: yes
   become_user: "{{ android_user }}"
 
